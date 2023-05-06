@@ -16,7 +16,7 @@
     border-radius: 10px;
     font-size: 1rem;
 }
-.form > button {
+.buttonLogin {
     padding: 20px 10px;
     width: 25%;
     border: none;

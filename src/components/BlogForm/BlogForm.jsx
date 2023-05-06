@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from "react"
 import style from "./blogForm.module.css"
 import createBlogService from "../../services/createBlog"
-import {redirect} from "react-router-dom";
+import {Link} from "react-router-dom";
 export const BlogForm = () => {
     const [title, setTitle] = useState('')
     const [content, setContent] = useState('')
@@ -23,13 +23,10 @@ export const BlogForm = () => {
        const image = blogImage
         e.preventDefault()
        try {
-           const response = await createBlogService.createBlog({title, content, image, userId})
+           await createBlogService.createBlog({title, content, image, userId})
            setTitle('')
            setBlogImage('')
            setContent('')
-           if(response.status === 'created') {
-               return redirect("/login")
-           }
        }catch (e) {
            console.error(e.message)
        }

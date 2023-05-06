@@ -10,16 +10,17 @@ export async function loader () {
 
 export const Default = () => {
     const response = useLoaderData()
-    console.log(response.response.blogs)
     return (
         <div className={style.default}>
             {
                 response.response.blogs.map((v) => {
                 return <div key={v.id} className={style.content}>
-                        <img src={v.image} alt={v.title}/>
-                        <h1>{v.title}</h1>
-                        <p>{v.description}</p>
-                        <p>{v.createdAt}</p>
+                        <img src={v.Image} alt={v.title}/>
+                        <span>createdAt: {v.createdAt}</span>
+                        <div className={style.textContent}>
+                            <h1>{v.title}</h1>
+                            <p>{v.content}</p>
+                        </div>
                     </div>
                 })
             }

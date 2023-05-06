@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
 import loginService from "../../services/login";
 import style from "./loginForm.module.css"
+import {Button} from "../Button/Button";
+
 export const LoginForm = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
@@ -26,20 +28,18 @@ export const LoginForm = () => {
             setLoggedInUser(user)
             setUsername('')
             setPassword('')
-
         }catch (e) {
             console.error(e.message)
         }
     }
     return (
         <>
-            {loggedInUser ? loggedInUser.data.username:(
             <form onSubmit={handleLogin} className={style.form}>
                 <input type="text" name="username" placeholder={`username`} value={username} onChange={({target}) => {setUsername(target.value)}}/>
                 <input type="password" name="password" placeholder={`password`} value={password} onChange={({target}) => {setPassword(target.value)}}/>
-                <button type="submit">Login</button>
+                {/*<button type="submit">Login</button>*/}
+                <Button type={`submit`} className={style.buttonLogin} name="Login" />
             </form>
-        )}
         </>
     )
 }

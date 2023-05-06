@@ -24,7 +24,7 @@ const router = createBrowserRouter([
             },
             {
                 path: "register",
-                element: <RegisterForm />
+                element: <RegisterForm />,
             },
             {
                 path: "create-blog",

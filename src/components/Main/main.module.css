@@ -57,7 +57,7 @@
     margin-right: 20px;
 }
 .notificationIcon {
-    font-size: 35px;
+    font-size: 34px;
     cursor: pointer;
 }
 .notificationCount {
@@ -70,8 +70,8 @@
     z-index: 1;
     border-radius: 100%;
     text-align: center;
-    top: -3px;
-    right: 2px;
+    top: -8px;
+    right: -5px;
     font-size: .8rem;
 }
 .name {
@@ -87,4 +87,31 @@
     border-radius: 50%;
     cursor: pointer;
     border: 3px solid darkslateblue;
+    margin-right: 20px;
+}
+.button {
+    border: none;
+    background: darkslateblue;
+    padding: 20px 15px;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+.buttonLogout {
+    border: none;
+    background: darkslateblue;
+    padding: 15px;
+    border-radius: 20px;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+}
+.link {
+    width: 30%;
+    margin-right: 10px;
 }

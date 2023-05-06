@@ -1,14 +1,14 @@
 import React, {useState} from "react"
 import registerService from "../../services/register"
 import style from "./registerForm.module.css"
+
 export const RegisterForm = () => {
     const [username, setUsername] = useState('')
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
      async function handleSubmit(e) {
         e.preventDefault()
-         const response = await registerService.register({username, email, password})
-         console.log(response)
+         await registerService.register({username, email, password})
          setUsername('')
          setEmail('')
          setPassword('')
