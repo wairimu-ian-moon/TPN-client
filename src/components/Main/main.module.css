@@ -1,0 +1,90 @@
+.main {
+    overflow-y: scroll;
+    height: 100vh;
+    background: whitesmoke;
+}
+.navigation {
+    display: flex;
+    position: sticky;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    height: 114px;
+    margin-bottom: 20px;
+}
+
+.topNavigation {
+    display: flex;
+    min-width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    position: relative;
+}
+.searchIcon {
+    position: absolute;
+    font-size: 32px;
+    right: 3%;
+    cursor: pointer;
+}
+.topNavigationLeft > input {
+    border: 1px solid black;
+    padding: 13px 15px;
+    border-radius: 20px;
+    font-size: 1rem;
+    width: 100%;
+}
+.topNavigationLeft > input:focus {
+    outline: none;
+}
+.topNavigationLeft {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: auto;
+    flex: 1;
+    position: relative;
+}
+
+.topNavigationRight {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
+.notificationBox {
+    position: relative;
+    margin-right: 20px;
+}
+.notificationIcon {
+    font-size: 35px;
+    cursor: pointer;
+}
+.notificationCount {
+    display: block;
+    position: absolute;
+    background: red;
+    color: white;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+    border-radius: 100%;
+    text-align: center;
+    top: -3px;
+    right: 2px;
+    font-size: .8rem;
+}
+.name {
+    display: block;
+    margin-right: 20px;
+}
+.profile {
+    min-width: 50px;
+    max-height: 50px;
+    block-size: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid darkslateblue;
+}

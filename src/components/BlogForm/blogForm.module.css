@@ -1,0 +1,36 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+.form > input:focus {
+    outline: none;
+}
+.form > input {
+    border: 1px solid black;
+    padding: 20px 15px;
+    width: 40%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.form > textarea {
+    resize: none;
+    margin-bottom: 30px;
+    padding: 20px 15px;
+    width: 40%;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+.form > button {
+    padding: 20px 10px;
+    width: 25%;
+    border: none;
+    border-radius: 20px;
+    background: darkslateblue;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
