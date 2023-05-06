@@ -1,11 +1,11 @@
 import React from "react"
 import {createBrowserRouter} from "react-router-dom";
-import {App} from "../App";
-import {ErrorPage} from "./error-page";
-import {LoginForm} from "../components/LoginForm/LoginForm";
-import {Default, loader as defaultLoader} from "../components/Default/Default";
-import {RegisterForm} from "../components/RegisterForm/RegisterForm";
-import {BlogForm} from "../components/BlogForm/BlogForm";
+import {App} from "./App";
+import {ErrorPage} from "./utils/error-page";
+import {LoginForm} from "./components/LoginForm/LoginForm";
+import {Default, loader as defaultLoader} from "./components/Default/Default";
+import {RegisterForm} from "./components/RegisterForm/RegisterForm";
+import {BlogForm} from "./components/BlogForm/BlogForm";
 
 const router = createBrowserRouter([
     {
@@ -16,7 +16,7 @@ const router = createBrowserRouter([
             {
                 index: true,
                 element: <Default />,
-                loader: defaultLoader
+                loader: defaultLoader,
             },
             {
                 path: "login",

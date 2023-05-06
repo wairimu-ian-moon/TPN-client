@@ -7,7 +7,8 @@ export const RegisterForm = () => {
     const [password, setPassword] = useState('')
      async function handleSubmit(e) {
         e.preventDefault()
-         await registerService.register({username, email, password})
+         const response = await registerService.register({username, email, password})
+         console.log(response)
          setUsername('')
          setEmail('')
          setPassword('')

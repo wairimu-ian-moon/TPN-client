@@ -2,7 +2,7 @@ import React from "react";
 import style from "./navigation.module.css"
 import Logo from "../../assets/logo.svg"
 import {Button} from "../Button/Button";
-import {Link, NavLink} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const NavigationItems = () => {
     return (
@@ -10,7 +10,7 @@ const NavigationItems = () => {
             {
                 ["Home", "Profile", "Messages", "Communities", "History"].map((v, i) => {
                     return <li className={style.item} key={i}>
-                        <a className={style.link} href="#">{v}</a>
+                        <a className={style.link} href="/">{v}</a>
                     </li>
                 })
             }

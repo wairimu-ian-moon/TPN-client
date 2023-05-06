@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const baseURL = "/api/blogs/create"
+const baseURL = "https://tpn-server.onrender.com/api/blogs/create"
 let token = null
 
 const setToken = newToken => {
@@ -14,7 +14,7 @@ const createBlog = async (newObject) => {
     return response.data
 }
 const getBlogs = async () => {
-    const response = await axios.get(`/api/blogs`)
+    const response = await axios.get(`https://tpn-server.onrender.com/api/blogs`)
     return  response.data
 }
 export default {createBlog, setToken, getBlogs}
