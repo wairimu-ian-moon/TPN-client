@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from "react"
 import style from "./blogForm.module.css"
 import createBlogService from "../../services/createBlog"
-import {Link} from "react-router-dom";
 export const BlogForm = () => {
     const [title, setTitle] = useState('')
     const [content, setContent] = useState('')

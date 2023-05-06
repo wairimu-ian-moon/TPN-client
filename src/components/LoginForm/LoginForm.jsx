@@ -10,6 +10,7 @@ export const LoginForm = () => {
 
     useEffect(() => {
         const loggedUserJSON = window.localStorage.getItem('loggedUser')
+        console.log(loggedInUser)
         if(loggedUserJSON) {
             const user = JSON.parse(loggedUserJSON)
             setLoggedInUser(user)
