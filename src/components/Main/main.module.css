@@ -47,7 +47,7 @@
 
 .topNavigationRight {
     display: flex;
-    flex: 1;
+    flex: 2;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
@@ -89,29 +89,33 @@
     border: 3px solid darkslateblue;
     margin-right: 20px;
 }
-.button {
-    border: none;
-    background: darkslateblue;
-    padding: 20px 15px;
-    border-radius: 20px;
-    width: 100%;
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: white;
-    cursor: pointer;
-}
 .buttonLogout {
     border: none;
     background: darkslateblue;
     padding: 15px;
     border-radius: 20px;
-    width: 100%;
+    width: 30%;
     font-size: 1.1rem;
     font-weight: 600;
     color: white;
     cursor: pointer;
+    margin-right: 20px;
+}
+.button {
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    background: darkslateblue;
+    padding: 15px;
+    border-radius: 20px;
+    width: 30%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
 }
 .link {
+    margin-right: 20px;
     width: 30%;
-    margin-right: 10px;
 }

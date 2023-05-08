@@ -1,0 +1,52 @@
+.navigation {
+    background: darkslateblue;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px;
+    color: whitesmoke;
+}
+.navigationRight {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 1;
+}
+.navigationLeft {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: center;
+    flex: 1;
+}
+.logo {
+    max-width: 55px;
+    margin-right: 20px;
+}
+.navigationLeft > h1 {
+    font-size: 1.7rem;
+}
+.link {
+    border: none;
+    background: whitesmoke;
+    padding: 20px 15px;
+    border-radius: 20px;
+    width: 30%;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: darkslateblue;
+    cursor: pointer;
+    text-align: center ;
+    margin-right: 20px;
+    text-decoration: none;
+}
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-size: 1rem;
+    padding: 20px;
+}
