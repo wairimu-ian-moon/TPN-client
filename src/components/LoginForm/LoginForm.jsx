@@ -7,7 +7,6 @@ import {PuffLoader} from "react-spinners";
 export const LoginForm = () => {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
-    const [loggedInUser, setLoggedInUser] = useState('')
     const navigate = useNavigate()
     const navigation = useNavigation()
 
@@ -15,7 +14,6 @@ export const LoginForm = () => {
         const loggedUserJSON = window.localStorage.getItem('loggedUser')
         if(loggedUserJSON) {
             const user = JSON.parse(loggedUserJSON)
-            setLoggedInUser(user)
             loginService.setToken(user.data.token)
         }
     }, [])
@@ -27,7 +25,6 @@ export const LoginForm = () => {
                 'loggedUser', JSON.stringify(user)
             )
             loginService.setToken(user.data.token)
-            setLoggedInUser(user)
             setUsername('')
             setPassword('')
             navigate("/dashboard")

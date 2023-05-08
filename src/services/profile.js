@@ -2,7 +2,6 @@ import axios from "axios";
 
 let token = null
 let userId = null
-const baseURL = "https://tpn-server.onrender.com/api/users/"
 
 const setToken = newToken => {
     token = `Bearer ${newToken}`
