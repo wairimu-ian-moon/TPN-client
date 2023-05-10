@@ -11,15 +11,11 @@ const setUserId = id => {
 }
 const getUser = async () => {
     const config = {
-        headers: {Authorization: token}
+        headers: {Authorization: token},
+        params: {userId}
     }
-    console.log("***",userId)
-    const response = await axios.get("https://tpn-server.onrender.com/api/users/user", {
-        params: {
-            userId: userId
-        },
-        config
-    })
+    console.log("***", userId)
+    const response = await axios.get(`https://tpn-server.onrender.com/api/users/user/`, config)
     console.log("data returned", response.data)
     return response.data
 }
