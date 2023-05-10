@@ -45,7 +45,7 @@ export const Profile = () => {
                     <form onSubmit={handleSubmit} className={style.form}>
                         <input type="text" name={`username`} value={username} placeholder={`username`} onChange={({target}) => setUsername(target.value)}/>
                         <input type="email" name={`email`} value={email} placeholder={`email`} onChange={({target}) => setEmail(target.value)}/>
-                        <input type="url" name={`image`} value={image} placeholder={`image url`} onChange={({target}) => setImage(target.value)}/>
+                        <input type="url" name={`image`} value={image} placeholder={`image url`} defaultValue={user.image} onChange={({target}) => setImage(target.value)}/>
                         <button type={`submit`} className={style.updateButton}>Update Profile</button>
                     </form>
                 )
