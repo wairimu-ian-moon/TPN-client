@@ -4,8 +4,8 @@ import {useNavigate, useNavigation} from "react-router-dom";
 import style from "./profile.module.css"
 import {PuffLoader} from "react-spinners";
 export async function loader() {
-    // const user = await profileService.getUser()
-    const user = null
+    const user = await profileService.getUser()
+    // const user = null
     return {user}
 }
 export const Profile = () => {
